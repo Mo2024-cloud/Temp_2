@@ -1,0 +1,321 @@
+/* font-family: "Nunito Sans", sans-serif; */
+
+:root{
+    --mainColor: #e65f78;
+}
+body {
+    font-family: "Nunito Sans", sans-serif;
+    /* height: 10000px; */
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--mainColor);
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--mainColor);
+}
+
+.home{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../DevFolio/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .btn-download{
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.home .btn-download:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+.home h1{
+    font-size: 50px;
+}
+.home h1::after{
+    content: '';
+    animation: header-animation 6s infinite;
+}
+
+@keyframes header-animation {
+    0%{
+        content: "|";
+    }
+    3%{
+        content: "D|";
+    }
+    6%{
+        content: "De|";
+    }
+    9%{
+        content: "Dev|";
+    }
+    12%{
+        content: "Deve|";
+    }
+    15%{
+        content: "Devel|";
+    }
+    18%{
+        content: "Develo|";
+    }
+    21%{
+        content: "Develop|";
+    }
+    24%{
+        content: "Develope|";
+    }
+    27%{
+        content: "Developer|";
+    }
+    30%{
+        content: "Develope|";
+    }
+    30%{
+        content: "Develop|";
+    }
+    33%{
+        content: "Develo|";
+    }
+    36%{
+        content: "Devel|";
+    }
+    39%{
+        content: "Deve|";
+    }
+    42%{
+        content: "Dev|";
+    }
+    45%{
+        content: "De|";
+    }
+    48%{
+        content: "Dei|";
+    }
+    51%{
+        content: "Deis|";
+    }
+    54%{
+        content: "Deisg|";
+    }
+    57%{
+        content: "Deisgn|";
+    }
+    60%{
+        content: "Deisgne|";
+    }
+    63%{
+        content: "Deisgner|";
+    }
+    66%{
+        content: "Deisgne|";
+    }
+    69%{
+        content: "Deisgn|";
+    }
+    71%{
+        content: "Deisg|";
+    }
+    73%{
+        content: "Deis|";
+    }
+    75%{
+        content: "Dei|";
+    }
+    77%{
+        content: "De|";
+    }
+    79%{
+        content: "D|";
+    }
+    81%{
+        content: "|";
+    }
+    83%{
+        content: "F|";
+    }
+    85%{
+        content: "Fr|";
+    }
+    87%{
+        content: "Fro|";
+    }
+    89%{
+        content: "Fron|";
+    }
+    91%{
+        content: "Front|";
+    }
+    93%{
+        content: "Front-|";
+    }
+    95%{
+        content: "Front-E|";
+    }
+    97%{
+        content: "Front-En|";
+    }
+    100%{
+        content: "Front-End|";
+    }
+    
+}
+
+.setting{
+    top: 30%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 0 8px 8px 0;
+    background-color: #333;
+    z-index: 15;
+}
+
+.shape{
+    width: 40px;
+    height: 80px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-20px);
+    animation: move 3s infinite alternate;
+}
+
+.shape::after{
+    content: '';
+    width: 4px;
+    height: 8px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-2px);
+}
+
+@keyframes move {
+    0%{
+        bottom: 20px;
+    }
+
+    25%{
+        bottom: 80px;
+    }
+    50%{
+        bottom: 30px;
+    }
+    75%{
+        bottom: 80px;
+    }
+    100%{
+        bottom: 20px;
+    }
+}
+
+/* ------About------ */
+
+.services .right ul li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    transition: all 1s;
+}
+
+.about .right ul li:hover{
+    border: 1px solid var(--mainColor);
+}
+
+.about .right ul li i{
+    transition: all 1s;
+}
+
+.about .right ul li:hover i{
+    color: var(--mainColor);
+}
+
+
+/* <!--  ------Client------  --> */
+
+.carousel-indicators {
+    bottom: -30px; 
+}
+
+.carousel-indicators [data-bs-target]{
+    height: 5px;
+    background-color: var(--mainColor);
+}
+
+
+/* <!--  ------portfolio------  --> */
+
+
+.portfolio .item .layer{
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #3333336e;
+    transition: all 0.5s;
+}
+
+.portfolio .item:hover .layer{
+    top: 0;
+}
+
+.portfolio .item img{
+    transition: all 0.5s;
+}
+
+.portfolio .item:hover img{
+    transform: scale(1.2);
+}
+
+.nav-tabs{
+    display: flex;
+    justify-content: center;
+    margin-block: 15px;
+    border: none;
+}
+
+.nav-tabs .nav-link.active{
+    color: #fff;
+    background-color: var(--mainColor);
+    border-color: transparent;
+    /* border-radius: 20px; */
+}
+
+.nav-tabs .nav-link{
+    color: #333;
+}
+
+.nav-tabs .nav-link:hover{
+    border-color: transparent;
+}
+
+html{
+    scroll-padding-top: 60px;
+}
+
+.frist-two{
+    width: 48%;
+}
+
+.btn-form{
+    background-color: var(--mainColor);
+    margin-top: 15px;
+    color: #fff;
+}
+
+.form-control:focus{
+    border-color: var(--mainColor);
+    box-shadow: 0 0 0 .25rem var(--mainColor);
+}
